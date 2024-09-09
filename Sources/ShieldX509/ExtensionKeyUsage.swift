@@ -13,7 +13,7 @@ import PotentASN1
 import ShieldOID
 
 
-public struct KeyUsage: OptionSet, Equatable, Hashable, Codable, CriticalExtensionValue {
+public struct KeyUsage: OptionSet, Equatable, Hashable, Codable, CriticalExtensionValue, Sendable {
 
   public static var extensionID = iso_itu.ds.certificateExtension.keyUsage.oid
   public static var asn1Schema = Schemas.keyUsageExtension
